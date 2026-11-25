@@ -1,0 +1,77 @@
+path:
+  raw_dir: "data\\raw"
+  interim_dir: "data\\interim"
+  processed_dir: "data\\processed"
+
+columns_to_remove:
+  - tourney_id     
+  - tourney_name
+  - tourney_date
+  - match_num
+
+
+preferred_order:
+  - target
+  - player_id
+  - player_name
+  - opp_id
+  - opp_name
+  - match_id
+  - surface
+  - draw_size
+  - tourney_level
+  - tourney_year
+  - tourney_month
+  - tourney_week
+  - 
+filenames:
+  main: "matches_main.csv"
+  postmatch: "matches_postmatch.csv"
+
+one_hot_maps:
+  surface:
+    Clay: 0
+    Hard: 1
+    Grass: 2
+    Carpet: 3
+  tourney_level:
+    G: 0
+    M: 1
+    A: 2
+    D: 3
+    F: 4
+    O: 5
+  player_entry:
+    Q: 0
+    WC: 1
+    LL: 2
+    PR: 3
+    S: 4
+    SE: 5
+    ALT: 6
+    Alt: 6
+    ITF: 7
+    UP: 8
+    W: 9
+  player_hand:
+    L: 0 
+    R: 1
+    U: 2
+    A: 3
+  opp_entry:
+    Q: 0
+    WC: 1
+    LL: 2
+    PR: 3
+    S: 4
+    SE: 5
+    ALT: 6
+    Alt: 6
+    ITF: 7
+    UP: 8
+    W: 9
+  opp_hand:
+    L: 0 
+    R: 1
+    U: 2
+    A: 3
